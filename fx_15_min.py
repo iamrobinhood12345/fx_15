@@ -6,7 +6,7 @@ rates_dict = {}
 page = requests.get()
 c = page.content
 soup = BeautifulSoup(c)
-rates = soup.find_all('td', {'class': 'rtRates'})
+rates = soup.find_all('td', {'class': })
 
 for each in rates:
     pair = str(each)[42:45] + '/' + str(each)[53:56]
