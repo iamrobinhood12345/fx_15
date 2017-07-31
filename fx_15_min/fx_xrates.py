@@ -6,14 +6,6 @@ from csv import writer
 
 
 PAGES = [
-    'http://www.x-rates.com/table/?from=USD&amount=1',
-    'http://www.x-rates.com/table/?from=gbp&amount=1',
-    'http://www.x-rates.com/table/?from=eur&amount=1',
-    'http://www.x-rates.com/table/?from=cad&amount=1',
-    'http://www.x-rates.com/table/?from=aud&amount=1',
-    'http://www.x-rates.com/table/?from=jpy&amount=1',
-    'http://www.x-rates.com/table/?from=chf&amount=1',
-    'http://www.x-rates.com/table/?from=cny&amount=1',
 ]
 
 rates_dict = {}
