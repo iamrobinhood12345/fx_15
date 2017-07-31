@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 rates_dict = {}
 
-page = requests.get('http://www.x-rates.com/table/?from=USD&amount=1')
+page = requests.get()
 c = page.content
 soup = BeautifulSoup(c)
 rates = soup.find_all('td', {'class': 'rtRates'})
