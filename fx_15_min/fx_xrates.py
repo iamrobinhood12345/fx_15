@@ -33,6 +33,7 @@ filename = '/Users/ben/code/finance/fx_15_min/data/' + utc_time + '.csv'
 
 with open(filename, 'w+') as csv_file:
     csv_writer = writer(csv_file)
+    csv_writer.writerow(['pair', 'rate'])
     for key, value in rates_dict.items():
         csv_writer.writerow([key, value])
 
