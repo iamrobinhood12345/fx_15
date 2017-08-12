@@ -29,11 +29,12 @@ for each in PAGES:
         rates_dict[pair] = rate
 
 utc_time = datetime.now(timezone('UTC')).strftime("%Y%m%d-%H%M%S")
-filename = '/Users/ben/code/finance/fx_15_min/data/' + utc_time + '.csv'
+filename = '/home/ubuntu/fx_15/fx_15_min/data/fx_' + utc_time + '.csv'
 
 with open(filename, 'w+') as csv_file:
     csv_writer = writer(csv_file)
+    csv_writer.writerow(['pair', 'rate'])
     for key, value in rates_dict.items():
         csv_writer.writerow([key, value])
 
-print(utc_time)
+print('fx ' + utc_time)
